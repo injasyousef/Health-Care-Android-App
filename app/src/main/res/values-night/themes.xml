@@ -1,0 +1,145 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LastProjectAndroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="SCREEN">
+        <item
+            name="android:background">#545454</item>
+    </style>
+    <style name="TEXT">
+        <item
+            name="android:textColor">#FFF</item>
+    </style>
+    <style name="RECTANGLE_ROUND">
+        <item
+            name="android:background">@drawable/rectangle_round_night</item>
+    </style>
+
+    <style name="BUTTON_COLOR">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">30dp</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:backgroundTint">#0A1F5A</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TEXT_FIELD">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:layout_marginEnd">30dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+        <item name="android:background">@drawable/custom_input_night</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textColorHint">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="SIMPLE_TEXT_COLOR">
+
+        <item name="android:textColor"> @color/white </item>
+
+    </style>
+    <style name="SIMPLE_HINT_TEXT_COLOR">
+
+        <item name="android:textColor">#A4A4A4A4 </item>
+
+    </style>
+    <style name="CUSTOM_BACKGROUND">
+        <item name="android:background">@drawable/custom_background_night</item>
+    </style>
+    <style name="SIMPLE_HEADER_TEXT_HOME">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">195dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SIMPLE_HEADER_WELCOME_TEXT_HOME">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_below">@+id/TextHomePage</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">220dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+    </style>
+    <style name="CARD_STYLE">
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+
+    </style>
+    <style name="CARD_STYLE_NEW">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_rowWeight">1</item>
+        <item name="android:layout_margin">12dp</item>
+        <item name="android:background">@color/lavender</item>
+    </style>
+    <style name="TEXT_HEADER_AMBULANCE_PAGE">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginStart">100dp</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="ONLY_BUTTON_COLOR">
+        <item name="android:backgroundTint">#0A1F5A</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="DOCTOR_CARD_STYLE">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="TEXT_CARD_STYLE">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">20dp</item>
+    </style>
+    <style name="RECYCLER_STYLE">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+    <style name="NEW_BUTTON_COLOR">
+        <item name="android:backgroundTint">#0A1F5A</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+    <style name="THEME_SWITCH">
+        <item name="android:thumb">@drawable/smaller_dark_mode</item>
+        <item name="thumbTint">@color/yellow</item>
+        <item name="trackTint">@color/DarkBlue</item>
+    </style>
+    <style name="NAV_BAR_STYLE">
+        <item name="itemBackground">@color/hintcolor</item>
+        <item name="itemIconTint">@drawable/selector_night</item>
+        <item name="itemTextColor">@drawable/selector_night</item>
+    </style>
+
+</resources>

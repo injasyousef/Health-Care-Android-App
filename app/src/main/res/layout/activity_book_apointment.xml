@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:ignore="ExtraText">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/doctorCardView"
+        style="@style/DOCTOR_CARD_STYLE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/btn_appointment_back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="20dp"
+                android:onClick="BackbtnBookApointment"
+                android:layout_marginTop="30dp"
+                android:clickable="true"
+                app:srcCompat="@drawable/newback" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <!-- Doctor Name -->
+                <TextView
+                    android:id="@+id/doctorName"
+                    style="@style/TEXT_CARD_STYLE"
+                    android:layout_gravity="right"
+                    android:text="د. يوسف انجاص"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/doctorMajor"
+                    style="@style/TEXT_CARD_STYLE"
+                    android:layout_gravity="right"
+                    android:text="اخصائي عيون"
+                    android:textSize="24sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/doctorCardView2"
+        android:layout_width="420dp"
+        android:layout_height="420dp"
+        android:layout_marginTop="10dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doctorCardView">
+
+
+        <ListView
+            android:id="@+id/lst_of_times"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            tools:listitem="@layout/appointment_item"
+
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btn_appointment_book"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        style="@style/NEW_BUTTON_COLOR"
+        android:text="أحجز"
+        android:textSize="24sp"
+        android:onClick="BookAppointment"
+        app:layout_constraintEnd_toEndOf="@id/doctorCardView2"
+        app:layout_constraintStart_toStartOf="@id/doctorCardView2"
+        app:layout_constraintTop_toBottomOf="@id/doctorCardView2" />
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        style="@style/NAV_BAR_STYLE"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/menu_navigation"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@id/btn_appointment_book"
+        app:layout_constraintStart_toStartOf="@id/btn_appointment_book"
+        app:layout_constraintTop_toBottomOf="@id/btn_appointment_book"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutHome"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        style="@style/CUSTOM_BACKGROUND"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SCREEN">
+
+            <TextView
+                android:id="@+id/TextHomePage"
+                style="@style/SIMPLE_HEADER_TEXT_HOME"
+                android:text="عيادة جامعة بيرزيت"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/txtPatiantName"
+                style="@style/SIMPLE_HEADER_WELCOME_TEXT_HOME"
+                android:maxLines="1"
+                android:minLines="1"
+                android:text="مرحبا سليمان هلال"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="298dp"
+                android:src="@drawable/cardiology"></ImageView>
+        </RelativeLayout>
+
+
+        <GridLayout style="@style/GridStyle">
+
+            <androidx.cardview.widget.CardView
+                style="@style/CARD_STYLE_NEW"
+                android:onClick="Contactusbtn"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    style="@style/CARD_STYLE"
+                    android:layout_width="176dp"
+                    android:layout_height="match_parent"
+
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/img11"
+                        android:onClick="Contactusbtn"
+                        style="@style/imageCardStyle"
+                        android:src="@drawable/call"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt11"
+                        style="@style/TEXT_CARD_STYLE"
+                        android:text="تواصل معنا"></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CARD_STYLE_NEW"
+                android:onClick="appointmentsBtn"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    style="@style/CARD_STYLE"
+                    android:onClick="appointmentsBtn"
+
+                    android:clickable="true">
+
+                    <ImageView
+                        android:id="@+id/img12"
+                        android:onClick="appointmentsBtn"
+                        style="@style/imageCardStyle"
+                        android:src="@drawable/d"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt12"
+                        style="@style/TEXT_CARD_STYLE"
+                        android:text="مواعيدي"></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <GridLayout
+            style="@style/GridStyle"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                style="@style/CARD_STYLE_NEW"
+                android:onClick="ambulancebtn"
+                app:cardCornerRadius="20dp"
+                >
+                <LinearLayout
+                    style="@style/CARD_STYLE"
+                    android:layout_width="175dp"
+                    android:layout_height="182dp"
+                    android:clickable="true">
+                    <ImageView
+                        android:id="@+id/img21"
+                        android:onClick="ambulancebtn"
+                        style="@style/imageCardStyle"
+                        android:src="@drawable/ambulance"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt21"
+                        style="@style/TEXT_CARD_STYLE"
+                        android:text="اطلب اسعاف "></TextView>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                style="@style/CARD_STYLE_NEW"
+                android:onClick="Logoutbtn"
+
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    style="@style/CARD_STYLE"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img22"
+                        style="@style/imageCardStyle"
+                        android:onClick="Logoutbtn"
+                        android:src="@drawable/logout"></ImageView>
+
+                    <TextView
+                        android:id="@+id/txt22"
+                        style="@style/TEXT_CARD_STYLE"
+                        android:text="تسجيل خروج">
+
+                    </TextView>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                style="@style/NAV_BAR_STYLE"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_navigation"
+                android:onClick="navBar"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#C359DA</color>
+    <color name="colorButton"> #008577</color>
+    <color name="botNav">#E4798E</color>
+    <color name="grey">#FFCACACA</color>
+    <color name="card">#FDDDE8</color>
+    <color name="default_back">#419099</color>
+    <color name="btncolor">#4EAE4D</color>
+    <color name="background">#349DCD</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="DarkBlue">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="green2">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="openblue">#0277BD</color>
+    <color name="hintcolor">#4A4A4A</color>
+    <color name="lavender">#8692f7</color>F9d71c
+    <color name="yellow">#F9d71c</color>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".appointments"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-33dp"
+        tools:layout_editor_absoluteY="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SCREEN"
+            android:layout_marginBottom="10dp">
+
+
+            <TextView
+                android:id="@+id/txtAppointmentsList"
+                style="@style/TEXT_HEADER_AMBULANCE_PAGE"
+                android:text="سجل المواعيد"
+                />
+
+            <ImageView
+                style="@style/Backbtn"
+                android:onClick="Backbtnappointments"
+                app:srcCompat="@drawable/newback" />
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewAppointments"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/doctorCardView2"
+
+            />
+        <Button
+            android:id="@+id/txtConfirmAmbulanceOrdeer"
+            style="@style/BUTTON_COLOR"
+            android:onClick="Clear"
+            android:hint="مسح" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                style="@style/NAV_BAR_STYLE"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_navigation"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

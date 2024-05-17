@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LastProjectAndroid"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".VerfyPerson"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPass"
+            android:exported="false" />
+        <activity
+            android:name=".CodeVerf"
+            android:exported="false" />
+        <activity
+            android:name=".ChangPassword"
+            android:exported="false" />
+        <activity
+            android:name=".ChooseDoctor"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".BookApointment"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChagePhoto"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfilePage"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsPage"
+            android:exported="false" />
+        <activity
+            android:name=".BookingDetailsPage"
+            android:exported="false" />
+        <activity
+            android:name=".appointments"
+            android:exported="false" />
+        <activity
+            android:name=".AmbulancePage"
+            android:exported="false" />
+        <activity
+            android:name=".contactUsPage"
+            android:exported="false" />
+        <activity
+            android:name=".LogIn"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

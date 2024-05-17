@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".CodeVerf">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        style="@style/RECTANGLE_ROUND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            style="@style/textHeaderLoginandsginupPage"
+            android:textSize="30dp"
+            android:layout_marginStart="50dp"
+            android:text="التحقق من البريد الإلكتروني"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+       <TextView
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/txtMsg"
+           android:textSize="18dp"
+           android:layout_marginTop="20dp"
+           android:layout_marginEnd="10dp"
+           android:text="تم إرسال رمز الى بريدك الالكتروني الجامعي يرجى ادخاله"
+           ></TextView>
+
+
+        <EditText
+            android:id="@+id/txtLoginId"
+            style="@style/TEXT_FIELD"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:hint="ادخل رمز التحقق" />
+
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            style="@style/NEW_BUTTON_COLOR"
+            android:text="تأكيد"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawableEnd="@drawable/smaller_register"
+            android:onClick="buttonValidateCode" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBtnsignin"
+                style="@style/txtTwo"
+                android:onClick="buttonSendEmail"
+                android:text="ارسال مرة اخرى" />
+
+            <TextView
+                style="@style/txtOne"
+                android:text="لم يصلك رمز التحقق ؟" />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

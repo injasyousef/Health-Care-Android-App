@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".SettingsPage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-33dp"
+        tools:layout_editor_absoluteY="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/SCREEN"
+            tools:ignore="MissingConstraints">
+            <TextView
+                android:id="@+id/settings"
+                style="@style/TEXT_HEADER_AMBULANCE_PAGE"
+                android:textSize="30dp"
+                android:text="الاعدادات الشخصيه"
+
+                />
+            <ImageView
+                android:id="@+id/imgBtnBack"
+                style="@style/Backbtn"
+                android:onClick="BackBtnSetting"
+                app:srcCompat="@drawable/newback" />
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/bg_img"
+            android:layout_width="290dp"
+            android:layout_height="260dp"
+            android:layout_marginLeft="60dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/changesetting" />
+
+
+        <RelativeLayout
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@+id/bg_img"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <Button
+
+                android:id="@+id/btnChangePassword"
+                style="@style/ONLY_BUTTON_COLOR"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:onClick="resetPassword"
+                android:text="تغيير كلمة المرور"
+                android:textSize="20dp" />
+
+            <Button
+
+                android:id="@+id/btnChangeImage"
+                style="@style/ONLY_BUTTON_COLOR"
+                android:layout_width="270dp"
+                android:layout_height="60dp"
+                android:layout_below="@id/btnChangePassword"
+                android:layout_marginTop="16dp"
+                android:onClick="changePhotobtn"
+                android:text="تغيير الصورة الشخصيه"
+
+                android:textSize="20dp" />
+
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/dark_light_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnChangeImage"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="90dp"
+                style="@style/THEME_SWITCH" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                style="@style/NAV_BAR_STYLE"
+                app:labelVisibilityMode="labeled"
+                app:menu="@menu/menu_navigation"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

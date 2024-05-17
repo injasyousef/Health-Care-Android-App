@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    style="@style/SCREEN"
+    tools:context=".LogIn">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        style="@style/RECTANGLE_ROUND"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/txtLogin"
+            style="@style/textHeaderLoginandsginupPage"
+            android:text="تسجيل دخول"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/unversityLogo"
+            style="@style/Backbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="186dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/birzeit_university" />
+
+
+        <EditText
+            android:id="@+id/txtLoginId"
+            style="@style/TEXT_FIELD"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawableEnd="@drawable/small_user_id"
+            android:hint="الرقم الجامعي" />
+
+        <EditText
+            android:id="@+id/txtLoginPassword"
+            style="@style/TEXT_FIELD"
+            android:layout_marginBottom="20dp"
+            android:drawableEnd="@drawable/smaller_password"
+            android:hint="كلمة السر"
+            android:inputType="textPassword"
+            android:textAlignment="viewEnd" />
+        <TextView
+            android:id="@+id/txtForgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="هل نسيت كلمة المرور ؟"
+            android:layout_marginStart="250dp"
+            android:onClick="resetPasswordbtn"
+            android:textColor="@color/DarkBlue"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/BUTTON_COLOR"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:drawableEnd="@drawable/smaller_register"
+            android:hint="  تسجيل دخول"
+            android:onClick="btnLogin" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginBottom="80dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtBtnsignin"
+                android:onClick="sginInLogin"
+                android:text=" سجل الآن"
+                style="@style/txtTwo" />
+
+            <TextView
+                style="@style/txtOne"
+                android:text="ليس لديك حساب؟"
+                 />
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

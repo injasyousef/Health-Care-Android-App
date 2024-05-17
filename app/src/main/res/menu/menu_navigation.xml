@@ -1,0 +1,20 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:id="@+id/home"
+    android:title="الصفحة الرئيسية"
+    android:icon="@drawable/home"
+
+   />
+
+<item
+android:id="@+id/add"
+android:title="حجز موعد"
+android:icon="@drawable/add"
+    />
+
+<item
+    android:id="@+id/user"
+    android:title="الصفحة الشخصية"
+android:icon="@drawable/user"
+/>
+</menu>

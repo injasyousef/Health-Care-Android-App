@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/CUSTOM_BACKGROUND"
+    tools:context=".ChooseDoctor">
+
+    <RelativeLayout
+        android:id="@+id/headerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/SCREEN"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/txtmedlab"
+            style="@style/SIMPLE_HEADER_TEXT_HOME"
+            android:text="عيادة جامعة بيرزيت"
+            android:textAlignment="viewStart" />
+
+        <TextView
+            style="@style/SIMPLE_HEADER_WELCOME_TEXT_HOME"
+            android:id="@+id/txtWelcome"
+            android:layout_marginTop="50dp"
+            android:text="مر حبن نجاصه"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="298dp"
+            android:src="@drawable/cardiology"></ImageView>
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/generalDoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="GenaralDocbtn"
+        app:cardCornerRadius="20dp"
+        style="@style/DOCTOR_CARD_STYLE_TOW"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerLayout">
+
+        <LinearLayout
+            style="@style/DOCTOR_CARD_STYLE"
+            android:layout_height="124dp"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgprescription"
+                style="@style/imageCardStyle"
+                android:onClick="GenaralDocbtn"
+                android:src="@drawable/doctor"></ImageView>
+
+            <TextView
+                style="@style/TEXT_CARD_STYLE"
+                android:text=" موعد لدى الطبيب العام"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/teethDoc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="EyeDocbtn"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/generalDoc">
+
+        <LinearLayout
+            style="@style/DOCTOR_CARD_STYLE"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imglabtest"
+                style="@style/imageCardStyle"
+                android:onClick="EyeDocbtn"
+                android:src="@drawable/optometrist"></ImageView>
+
+            <TextView
+                style="@style/TEXT_CARD_STYLE"
+                android:text="موعد لدى طبيب العيون"></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lab"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="LabDoctor"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/teethDoc">
+
+        <LinearLayout
+            style="@style/DOCTOR_CARD_STYLE"
+            android:clickable="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imgpayment"
+                style="@style/imageCardStyle"
+                android:onClick="LabDoctor"
+                android:src="@drawable/medical_lab"></ImageView>
+
+            <TextView
+                style="@style/TEXT_CARD_STYLE"
+                android:text="موعد لدى المختبر "></TextView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            style="@style/NAV_BAR_STYLE"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_navigation" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

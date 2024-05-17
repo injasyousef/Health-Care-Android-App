@@ -1,0 +1,76 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+
+
+
+
+
+    <style name="GridStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:columnCount">2</item>
+        <item name="android:rowCount">2</item>
+        <item name="android:layout_marginTop">50dp</item>
+        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="imageCardStyle">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">80dp</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+
+
+
+
+
+
+    <style name="textHeaderLoginandsginupPage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginStart">90dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">45dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+
+    <style name="Backbtn">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_marginStart">20dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="radioBtn">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">25dp</item>
+    </style>
+    <style name="AppTheme.Light" parent="Theme.AppCompat.Light">
+        <!-- Define light mode attributes -->
+    </style>
+
+    <!-- Dark Mode -->
+    <style name="AppTheme.Dark" parent="Theme.AppCompat">
+        <!-- Define dark mode attributes -->
+    </style>
+
+</resources>

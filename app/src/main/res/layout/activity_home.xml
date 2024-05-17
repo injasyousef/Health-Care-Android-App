@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".home">
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayoutHome"
+        android:layout_height="140dp"
+        android:layout_width="0dp"
+        style="@style/RECTANGLE_ROUND"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="150dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/clinic">
+
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/headerHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:layout_marginTop="370dp"
+                android:layout_marginBottom="10dp"
+                android:text="عيادة جامعة بيرزيت"
+                android:textColor="@color/openblue"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/header2HomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/headerHomePage"
+                android:layout_marginStart="140dp"
+                android:layout_marginBottom="3dp"
+                android:text="صحتكم غالية علينا"
+               style="@style/SIMPLE_TEXT_COLOR"
+                android:textSize="33sp"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+            <TextView
+                android:id="@+id/txthintHomePage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/header2HomePage"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:text="تسعى دائرة الخدمات الطبية في جامعة بيرزيت لتقديم خدمات طبية متميزة باستمرار، بضمان السلامة والجودة العالية، من خلال كوادر ذات خبرة وأخلاقيات مهنية، تلتزم بالمسؤوليات المجتمعية."
+                style="@style/SIMPLE_TEXT_COLOR"
+                android:textSize="20dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/flippedImagebtn"
+                android:layout_width="42dp"
+                android:layout_height="38dp"
+                android:layout_below="@+id/txthintHomePage"
+                android:layout_marginStart="335dp"
+                android:clickable="true"
+                android:onClick="onClickMainPage"
+                app:srcCompat="@drawable/flipped" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

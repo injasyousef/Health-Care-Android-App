@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/SCREEN"
+    tools:context=".ChagePhoto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/txtChangePic"
+            android:text=" تغيير الصورة الشخصية "
+            style="@style/TEXT_HEADER_AMBULANCE_PAGE"
+            android:textSize="29dp"/>
+
+
+        <ImageView
+            android:id="@+id/imgBtnBack"
+            app:srcCompat="@drawable/newback"
+            android:onClick="BackbtnChangPhoto"
+            style="@style/Backbtn" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnChangePic"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@android:color/black"
+            android:drawableEnd="@drawable/smaller_upload_photo"
+            android:hint="إرفاق صورة شخصية"
+            android:onClick="PickPhotobtn"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:paddingEnd="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            app:cornerRadius="40dp" />
+        <Button
+            android:id="@+id/txtConfirmChangePic"
+            style="@style/BUTTON_COLOR"
+            android:onClick="changePhotoBtn"
+            android:hint="تغيير الصوره الشخصية" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            style="@style/NAV_BAR_STYLE"
+            app:labelVisibilityMode="labeled"
+            app:menu="@menu/menu_navigation"
+            />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
